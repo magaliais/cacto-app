@@ -1,20 +1,19 @@
 import { Notifyer } from './Notifyer.js'
+import { Timer } from './Timer.js'
 
 const App = {
-  async start() {
 
-    try {
-      await Notifyer.init();
-      Notifyer.notify({
-        title: "Vai se hidratar, seu cacto!",
-        body: "Hora de beber um pouco de água, parceiro",
-        icon: "../public/cactus.svg"
-      });
-    } catch (error) {
-      alert(error.message)
-    }
+  buttonDrink: document.getElementById("button-drink"),
+  timerClock: document.getElementById("timer-clock"),
+
+  async start() {
+    App.buttonDrink.addEventListener("click", App.start)
+    await Notifyer.init()
+    const time = 0.1 * 60
+    Timer.init(time)
+
+  },
     
-  }
 }
 
 export { App }

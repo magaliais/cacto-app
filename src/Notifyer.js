@@ -7,13 +7,12 @@ const Notifyer = {
     }
   },
 
-  notify({ title, body, icon }) {
+  notify({title, body}) {
 
-    new Audio('../public/notification.mp3').play();
+    // new Audio('../public/notification.mp3').play();
 
     new Notification(title, {
-      body: body,
-      icon: "../public/cactus.png",
+      body: "Tá na hora de beber uma aguinha, parceiro!",
       silent: "on",
     })
 

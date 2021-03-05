@@ -9,18 +9,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <link rel="shortcut icon" href="./public/cactus.svg" type="image/x-icon">
 
 </head>
 <body>
 
   <p>Próximo copo de água em</p>
-  <span>15:00</span>
 
+  <div id="timer">
+    <span id="timer-clock">00:00</span>
+  </div>
+
+  <div id="drink">
+    <button disabled id="button-drink">Bebi</button>
+  </div>
 
   <script type="module">
   // type="module" permite o uso de módulos
-  // do JavaScript 
+  // do JavaScript
 
     import { App } from './src/App.js';
 
