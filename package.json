@@ -1,0 +1,23 @@
+{
+  "name": "cacto-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magaliais/cacto-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magaliais/cacto-app/issues"
+  },
+  "homepage": "https://github.com/magaliais/cacto-app#readme",
+  "devDependencies": {
+    "electron": "^12.0.1"
+  }
+}
