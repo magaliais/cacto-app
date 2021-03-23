@@ -35,7 +35,6 @@ const Timer = {
 
   countdown() {
     Timer.currentTime--;
-    console.log(Timer.currentTime)
 
     View.render({
       minutes: Timer.formatTime(Timer.timeToMinutes(Timer.currentTime)),
@@ -46,7 +45,8 @@ const Timer = {
       clearInterval(Timer.interval)
       Notifyer.notify({
         title: "Hora de se hidratar",
-        body: "Vá beber um copo de água, parceiro!"
+        body: "Tá na hora de beber uma aguinha, parceiro!",
+        icon: '../public/cactus.png'
       });
       App.buttonDrink.removeAttribute("disabled")
       
