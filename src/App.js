@@ -9,7 +9,7 @@ const App = {
   async start() {
     App.buttonDrink.addEventListener("click", App.start)
     await Notifyer.init()
-    const time = 0.1 * 60
+    const time = 40 * 60
     Timer.init(time)
 
   },

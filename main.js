@@ -2,8 +2,10 @@ const { app, BrowserWindow } = require('electron')
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 600,
-    height: 450,
+    width: 400,
+    height: 300,
+    resizable: false,
+    fullscreenable: false,
     icon: './public/cactus.png',
     webPreferences: {
       nodeIntegration: true,
