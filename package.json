@@ -2,9 +2,10 @@
   "name": "cacto-app",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "electron/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "npx electron-packager . --icon public/cactus.ico --out=packages"
   },
   "repository": {
     "type": "git",
