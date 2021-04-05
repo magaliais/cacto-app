@@ -5,7 +5,7 @@ const iconPath = resolve(__dirname, '../', 'public', 'cactus.png')
 
 function createTray() {
   const tray = new Tray(iconPath)
-  tray.setToolTip('Não sou cacto')
+  tray.setToolTip('Não sou um cacto')
   
   return tray
 }
